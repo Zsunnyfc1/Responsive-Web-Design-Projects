@@ -31,5 +31,9 @@ Fullfill the below user stories:
 
 ### Screenshots
 
+![image](https://user-images.githubusercontent.com/79604811/147889892-4721b77f-8e0d-4c87-b805-6f73d1370fc8.png)
+![image](https://user-images.githubusercontent.com/79604811/147889908-0e444bc0-9f01-4e5a-8afb-34511ffe1ea9.png)
+![image](https://user-images.githubusercontent.com/79604811/147889919-493d4aa9-4d6e-4cda-9970-9c7df3e43e3d.png)
+
 
 
