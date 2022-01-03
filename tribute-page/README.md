@@ -1,6 +1,6 @@
 # freeCodeCamp - Responsive Web Design - Survey Form Project
 
-This is a solution to the [Tribute Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
+This is a solution to the freecodecamp [Tribute Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
 
 ## Table of contents
 
@@ -8,9 +8,7 @@ This is a solution to the [Tribute Page](https://www.freecodecamp.org/learn/resp
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -34,6 +32,22 @@ Fullfill the below user stories:
 ![image](https://user-images.githubusercontent.com/79604811/147889892-4721b77f-8e0d-4c87-b805-6f73d1370fc8.png)
 ![image](https://user-images.githubusercontent.com/79604811/147889908-0e444bc0-9f01-4e5a-8afb-34511ffe1ea9.png)
 ![image](https://user-images.githubusercontent.com/79604811/147889919-493d4aa9-4d6e-4cda-9970-9c7df3e43e3d.png)
+
+### Links
+
+- Solution URL: [https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/tribute-page](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/tribute-page)
+- Live Site URL: [https://tribute-page-sz.netlify.app/](https://tribute-page-sz.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f116d58-1737-4c26-85f8-535b6e10ab1e/deploy-status)](https://app.netlify.com/sites/tribute-page-sz/deploys)
+
+## My Process
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+
+## Author
+
+- GitHub - [@Zsunnyfc1](https://github.com/Zsunnyfc1)
+- LinkedIn - [@Sunny-Zhang](https://www.linkedin.com/in/sunny-zhang-3a773214b/)
 
 
 
