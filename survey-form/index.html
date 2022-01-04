@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Survey Form Project">
+        <meta name="keywords" content="Survey, Form">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">Welcome to My Survey</h1>
+              <p id="description" class="description text-center">
+                Please fill out this form to assist me with improving my web development skills</p>
+            </header>
+
+            <form id="survey-form" action="#">
+                <fieldset>
+
+                    <!--Name-->
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required>
+                    </div> 
+                    
+                    <!--Email-->
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <!--Age-->
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                        <input type="number" id="number" class="form-control" name="age" min="18" max="100" placeholder="Age">
+                    </div>
+
+                    <!--Role Dropdown-->
+                    <div class="form-group">
+                        <label id="role-label" for="role">What describes your current role?</label>
+                        <select name="role" id="dropdown" class="form-control" required>
+                            <option disabled selected value>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="employee">Full Time Employee</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                
+                    <!--Recommendation Radio-->
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Would you recommend learning Front-end web development?</legend>
+                          <label for="recommend"><input type="radio" class="input-radio" 
+                                   name="recommend" value="definitely">Definitely</label>
+                            <label for="recommend"><input type="radio" class="input-radio" 
+                                   name="recommend" value="yes">Yes</label>
+                            <label for="recommend"><input type="radio" class="input-radio" 
+                                   name="recommend" value="maybe">Maybe</label>
+                            <label for="recommend"><input type="radio" class="input-radio" 
+                                   name="recommend" value="no">No</label>
+                          <label for="recommend"><input type="radio" class="input-radio" 
+                                   name="recommend" value="never">Never</label>
+                        </fieldset>
+                    </div>
+                  
+                    <!--Favorite Project Dropdown-->
+                    <div class="form-group">
+                        <label id="fav-project" for="mostLike">What is your preferred Javascript Framework?</label>
+                        <select name=mostLike id="most-like" class="form-control" required>
+                            <option disabled selected value>Choose preferred framework</option>
+                            <option value="angular">Angular</option>
+                            <option value="react">React.js</option>
+                            <option value="vue">Vue.js</option>
+                        </select>
+                    </div>
+                  
+                    <!--Improvements Checkbox-->
+                    <div class="form-group">
+                        <fieldset>
+                          
+                            <legend>What skill would you most like to see improvements in?
+                              <span class="clue">(Check all that apply)</span></legend>
+                            
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="html">
+                              HTML</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="css">
+                              CSS</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="javascript">
+                              Javascript</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="Git">
+                              Git and Version Control</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="bootstrap">
+                              Bootstrap</label>
+                          
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="jquery">
+                              jQuery</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="sass">
+                              SASS</label>
+                          
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="angular">
+                              Angular</label>
+                          
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="react.js">
+                              React.js</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="vue.js">
+                              Vue.js</label>
+
+                            <label for="improvements">
+                            <input type="checkbox" class="input-checkbox" name="improvements" value="node.js">
+                              Node.js</label>
+
+                          
+                        </fieldset>            
+                    </div>
+
+                    <!--Additional Comments-->
+                    <div class="form-group">
+                      <label for="comment">Any comments or suggestions?</label>
+                      <textarea name="comment" id="comment" class="input-textarea" 
+                                placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    
+                    <!--Submit Button-->
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                  
+                </fieldset>
+          </form>
+        </div>
+    </body>
+
+  
+</body>
+</html>
