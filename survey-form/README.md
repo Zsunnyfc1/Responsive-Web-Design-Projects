@@ -8,7 +8,6 @@ This is a solution to the [Survey Form Challenge](https://www.freecodecamp.org/l
   - [The challenge](#the-challenge)
   - [Screenshots](#Screenshots)
   - [Links](#links)
-  - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -34,4 +33,25 @@ Fullfill the below user stories:
 - User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
 - User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
 - User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+
+### Screenshots
+
+![image](https://user-images.githubusercontent.com/79604811/147998454-ea149a10-8d9c-4b49-8faf-01925107d970.png)
+![image](https://user-images.githubusercontent.com/79604811/147998537-274b9822-d4f7-4765-b3ae-a4c642c4266c.png)
+
+### Links
+
+- Solution URL: [https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/survey-form](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/survey-form)
+- Live Site URL: [https://survey-form-sz.netlify.app/](https://survey-form-sz.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/16641222-015b-4c8a-b069-f4c8a3117327/deploy-status)](https://app.netlify.com/sites/survey-form-sz/deploys)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+
+## Author
+
+- GitHub - [@Zsunnyfc1](https://github.com/Zsunnyfc1)
+- LinkedIn - [@Sunny-Zhang](https://www.linkedin.com/in/sunny-zhang-3a773214b/)
+
 
