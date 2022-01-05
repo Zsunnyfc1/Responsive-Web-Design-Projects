@@ -1,6 +1,6 @@
 # Survey Form Challenge
 
-This is a solution to the [Survey Form Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
+This is a solution to the [Survey Form Project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
 
 ## Table of contents
 
