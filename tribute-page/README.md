@@ -1,6 +1,6 @@
 # freeCodeCamp - Responsive Web Design - Survey Form Project
 
-This is a solution to the freecodecamp [Tribute Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
+This is a solution to the freecodecamp [Tribute Page Project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
 
 ## Table of contents
 
