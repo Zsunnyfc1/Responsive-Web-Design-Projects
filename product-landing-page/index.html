@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"/>
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://t3.ftcdn.net/jpg/00/83/69/78/360_F_83697854_yb4p1ddnDmGBWl13a2HPxeHnUKJ6vgnj.jpg"/>
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#prices">Pricing</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container center">
+    <h2>Cello Sell</h2>
+    <h3>Handcarved Masterworks </h3><br>
+  </div>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Extravagant Makes</h2>
+          <p>
+            Every Cello is made with deluxe materials and is built to last as long as possible. 
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Delivery</h2>
+          <p>
+            Your Cello will be made and delivered to you as soon as possible. 
+            If the product does not meet your specifications we guarantee free returns.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Control</h2>
+          <p>Cello's will be throroughly inspected for any imperfections or damage before being shipped. The sound quality and make will be tested beforehand to ensure a satisfactory product.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="how-it-works">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Apk39Q_NO68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </section>
+
+    <section id="pricing">
+      <h2 id ="prices">Pricing</h2>
+      </section>
+      
+      <section id="pricing">
+      <div class="product">
+        <div class="level">1/10 Cello Outfit</div>
+        <h2>$475</h2>
+        <ol>
+          <li>Length: 17.5 inches</li>
+          <li>Height: 3 feet and under</li>
+          <li>Arm Length: Under 16 inches</li>
+          <li>Age: 4-6 years</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+      
+      <div class="product">
+        <div class="level">1/8 Cello Outfit</div>
+        <h2>$575</h2>
+        <ol>
+          <li>Length: 17.75 to 20 inches</li>
+          <li>Height: 3 to 3.5 feet</li>
+          <li>Arm Length: 16-18 inches</li>
+          <li>Age: 5-7 years</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+      
+      <div class="product">
+        <div class="level">1/4 Cello Outfit</div>
+        <h2>$675</h2>
+        <ol>
+          <li>Length: 20 to 23 inches</li>
+          <li>Height: 3.5 to 4 feet</li>
+          <li>Arm Length: 18-20 inches</li>
+          <li>Age: 7-9 years</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+      </section>
+      
+    <section id="pricing">
+      <div class="product">
+        <div class="level">1/2 Cello Outfit</div>
+        <h2>$700</h2>
+        <ol>
+          <li>Length: 23 to 26 inches</li>
+          <li>Height: 4 to 4.5 feet</li>
+          <li>Arm Length: 20-22 inches</li>
+          <li>Age: 9-11 years</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+      
+      <div class="product">
+        <div class="level">3/4 Cello Outfit</div>
+        <h2>$800</h2>
+        <ol>
+          <li>Length: 26 to 27.25 inches</li>
+          <li>Height: 4.5 to five feet</li>
+          <li>Arm Length: 22-24 inches</li>
+          <li>Age: 11-15 years</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+      
+      <div class="product">
+        <div class="level">4/4 Cello Outfit</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Length: 30 inches and above</li>
+          <li>Height: 5 feet or taller</li>
+          <li>Arm Length: 24 or more inches</li>
+          <li>Age: 15 to adult</li>
+        </ol>
+        <button class="btn">Purchase</button>
+      </div>
+    </section>
+    
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+      name="email" id="email" type="email" placeholder="Enter your email address" required/>
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+      </section>
+
+      
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+      <span>Copyright 2022, Cello Sell</span>
+    </footer>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
