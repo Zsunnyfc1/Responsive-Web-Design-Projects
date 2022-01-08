@@ -42,7 +42,7 @@ Fullfill the below user stories:
 ### Links
 
 - Solution URL: [https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/survey-form](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/survey-form)
-- Live Site URL: [https://survey-form-sz.netlify.app/](https://survey-form-sz.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/16641222-015b-4c8a-b069-f4c8a3117327/deploy-status)](https://app.netlify.com/sites/survey-form-sz/deploys)
+- Live Site URL: [https://survey-form-sz.netlify.app/](https://survey-form-sz.netlify.app/) 
 
 ### Built with
 
