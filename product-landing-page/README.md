@@ -44,7 +44,7 @@ Fullfill the below user stories:
 ### Links
 
 - Solution URL: [https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/product-landing-page](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/product-landing-page)
-- Live Site URL: [https://product-landing-page-sz.netlify.app/](https://product-landing-page-sz.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/74f9c086-5671-486e-801e-1e7745c3bb58/deploy-status)](https://app.netlify.com/sites/product-landing-page-sz/deploys)
+- Live Site URL: [https://product-landing-page-sz.netlify.app/](https://product-landing-page-sz.netlify.app/) 
 
 
 ### Built with
