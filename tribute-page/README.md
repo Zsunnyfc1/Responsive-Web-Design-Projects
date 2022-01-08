@@ -36,8 +36,7 @@ Fullfill the below user stories:
 ### Links
 
 - Solution URL: [https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/tribute-page](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/tribute-page)
-- Live Site URL: [https://tribute-page-sz.netlify.app/](https://tribute-page-sz.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f116d58-1737-4c26-85f8-535b6e10ab1e/deploy-status)](https://app.netlify.com/sites/tribute-page-sz/deploys)
-
+- Live Site URL: [https://tribute-page-sz.netlify.app/](https://tribute-page-sz.netlify.app/) 
 ## My Process
 ### Built with
 
