@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header style="color:#b6fcd5">Git Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction_to_Git">Introduction to Git</a></li>
+    <li><a class="nav-link" href="#Git_Repository">Git Repository</a></li>
+    <li><a class="nav-link" href="#Recording_Changes">Recording Changes</a></li>
+    <li><a class="nav-link" href="#Ignoring_Files">Ignoring Files</a></li>
+    <li><a class="nav-link" href="#Commiting_Files">Commiting Files</a></li>
+    <li><a class="nav-link" href="#Removing_Files">Removing Files</a></li>
+    <li><a class="nav-link" href="#Undoing_Changes">Undoing Changes</a></li>
+    <li><a class="nav-link" href="#Working_with_Remotes">Working with Remotes</a></li>
+    <li><a class="nav-link" href="#Branches">Branches</a></li>
+    <li><a class="nav-link" href="#Branch_Merging">Branch Merging</a></li>
+    <li><a class="nav-link" href="#Rebasing">Rebasing</a></li>
+    <li><a class="nav-link" href="#Github">Github</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction_to_Git">
+    <header>Introduction to Git</header>
+    <article>
+      <p>
+        Git is a open source distributed control system that can quickly handle any size of project from small to large efficiently. It is extremely useful for software development as it is used to coordinate work among programmers by collaborating source code and tracking changes in files.
+      </p>
+
+      <p>
+        The way Git works is by storing its data as a series of snapshots instead of storing the data as a list of file-based changes. This means every time Git commits or saves the current project, it is saved as a picture of what all your files look like at that current moment and then stores a reference to that snapshot. That also means if the files have not changed and it is saved again, Git doesn't store the new save and just refers to a link of the previous snapshot stored.
+      </p>
+      
+      <p>
+        There are three states to the files stored in Git: modified, staged, and commited.
+      </p>
+      
+      <ul>
+        <li>
+          Modified is the state where files are changed, but it not stored or "commited" into your local database yet.
+        </li>
+        <li>
+          Staged is when Modified files are checked to be snapshotted into the next commit of your database.
+        </li>
+        <li>
+          Commited is the final state where the data is stored within your local database.
+        </li>
+      </ul>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Git_Repository">
+    <header>Git Repository</header>
+    <article>
+      <p>A Git Repository is data structure used for storing metadata of a set of files and directories. Repositories in Git are considered to be your project folder as it holds the collection of your files and the history of changes made to those files.There are two ways to obtain a Git repository: 
+      <ol>
+        <li>initialize a local  directory into a Git repository</li> 
+        <li>clone a Git repository from somewhere else.</li>
+      </ol>
+      </p>
+
+      <ul>
+        <li>
+          <h3>Initializing a local directory into a Git repository:</h3>
+          The first step to creating a Git repository this method is to first open Git bash or Git cmd. Then locate the project folder path where all the project files are in, which usually looks like <code>$ cd C:/Users/user/my_project</code> and type <code>$ git init</code>
+          This informs Git to create an empty repository for this specific project, but the files within  still need to be staged and commited for it to be stored within the repository.
+        </li>
+        <li>
+          <h3>Cloning an existing Git Repository:</h3>
+          To get a copy of an existing Git repository, use the command <code>git clone "url"</code> For example, if you want to clone a repository called "git2" you type <code>$ git clone https://github.com/git2</code>
+The "git clone" command allows you to receive a copy that holds nearly all data that the server has. That means every version of every file from the entire history of the project is copied when you use git clone. If in the unfortunate case your server disk gets corrupted, you can easily clone a working copy on any client to set the server state back to the moment when it was cloned.
+        </li>
+      </ul>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Recording_Changes">
+    <header>Recording Changes</header>
+    <article>
+      <p>
+        In your working Git repository, there are two types of files: (1) tracked files, which are snapshotted files that Git knows about. They can be unmodified, modified, or staged. (2) Untracked files, which are files not in the latest snapshot or not within your staging area. This means Git has no idea these files exist.
+      </p>
+
+      <p>
+        To see which files are tracked and untracked, you can use the command <code> git status</code> which shows the status of the directory and what files are in it. If the current working directory is all commited, it will say <code>On branch main
+Your branch is up-to-date with 'origin/main'.
+nothing to commit, working tree clean</code> 
+        but if there are untracked files, the "git status" command will instead show this:
+        <code>Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+          &lt;file&gt;
+nothing added to commit but untracked files present (use "git add" to track)</code> With the "git add" command you can specify a file or entire directory, which will then be tracked and staged for you, and all that's left is to commit the new files/directory. 
+      </p>
+    </article>
+  </section>
+    
+  <section class="main-section" id="Ignoring_Files">
+    <header>Ignoring Files</header>
+    <article>
+    <p>In your work, there might be files that you don't want to add or stage into your Git repository. You can create a ".gitignore" file that lists patterns for specific files you don't want to include. For example the .gitignore file below tells Git to ignore any files ending in  “.o” or “.a”.</p>
+      <code>$ cat .gitignore
+            *.[oa]</code>
+    </article>
+  </section>
+    
+  <section class="main-section" id="Commiting_Files">
+    <header>Commiting Files</header>
+    <article>
+    <p>
+      To commit, use the command <code>git commit</code> which will open a text editor that asks you to enter a message specifying what you changed. You can also type the command <code> git commit -m </code> to type the message inline without having the text editor open.
+    </p>
+    <p>
+When commiting long messages there is a generally agreed format called the 50/72 rule where the: <ul>
+    <li>First line is the summary and it should be only 50 characters.</li> 
+     <li>Then a blank line.</li> 
+     <li>Rest of the message specifying changes around 72 characters.</li> 
+    </ul>
+    </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Removing_Files">
+    <header>Removing Files</header>
+    <article>
+      <p>
+        To remove a file from Git, you have to remove it from your tracked files  and then commit. The "git rm" command is used for removing files from git, and it also removes the file from your working directory so you don’t see it as an untracked file the next time around. This removes the file from the Git staging area, making it an unstaged file. To see the changes that it is removed from your tracked files, you have to commit after using "git rm". 
+      </p>
+      <p>
+      For example, if you just use "rm" &lt;file&gt; and then check with git status, it will say:
+        <code>
+          $ rm PROJECTS.md
+          $ git status
+          On branch master
+          Your branch is up-to-date with 'origin/master'.
+          Changes not staged for commit:
+          (use "git add/rm &lt;file&gt;..." to update what will be committed)
+          (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+          deleted:    PROJECTS.md
+
+          no changes added to commit (use "git add" and/or "git commit -a")
+        </code>
+      </p>
+      <p>
+        Next if you run "git rm", it stages the removal of the file:
+        
+        <code>
+        $ git rm &lt;file&gt;
+        rm '&lt;file&gt;'
+        $ git status
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        Changes to be committed:
+        (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+        deleted:    &lt;file&gt;
+        </code>
+          
+        The next time you commit, the file will no longer tracked and removed.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Undoing_Changes">
+    <header>Undoing Changes</header>
+    <article>
+      <p>
+        In the frequent scenario you want to reverse what changes you made to a file or repository there are several options available.
+      </p>
+    <ul>
+     <li><p>
+        The "git amend" command is useful for when you commit too early with some files you forgot to add, or the commit message wasn't accurate. What it does is after you re-add those files and use <code>$ git commit --amend</code> it will redo that commit again and replace the previous commit.
+       </p></li>
+      
+      <li><p>The "git reset HEAD &lt;file&gt;…" is used to unstage any files you don't want to stage, and allows you specify which files that you don't want in the staging area. For example if you use to "git reset HEAD" for a file named CONTRIBUTING.md
+and check with git status afterwards it will say:
+        <code>
+        $ git reset HEAD CONTRIBUTING.md
+        Unstaged changes after reset:
+        M	CONTRIBUTING.md
+        $ git status
+        On branch master
+        Changes to be committed:
+        (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    README.md -> README
+
+        Changes not staged for commit:
+        (use "git add <file>..." to update what will be committed)
+        (use "git checkout -- <file>..." to discard changes in working directory)
+
+         modified:   CONTRIBUTING.md
+        </code>
+        </p></li>
+      
+      <li><p>To unmodify the changes made to a modified file and make it as if the changes never occurred, you use the "git checkout -- &lt;file&gt;" command, which in the case of undoing the changes made to the CONTRIBUTING.md it will show this:
+        <code>
+          $ git checkout -- CONTRIBUTING.md
+          $ git status
+          On branch master
+          Changes to be committed:
+          (use "git reset HEAD <file>..." to unstage)
+
+          renamed:    README.md -> README
+         </code>
+        </p></li>
+      
+      <li><p>The "git restore" command is a combination of the above two commands in that you can remove files from the staged area like "git checkout" using 
+        <code>git restore --staged &lt;file&gt;…</code>
+        and unmodify changes made to a modified file like "git reset" using 
+        <code>git restore &lt;file&gt;</code>
+        </p></li>
+          
+        <li><p>The "git revert" command is different from the above commands in that it makes a new commit that doesn't have the changes of the previous commit in it, but doesn't delete that previous commit so it shows that this is a new commit made to correct some changes. It is often used in public repositories as it doesn't interfere with commits made by other members.
+        </p></li>
+      </ul>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Working_with_Remotes">
+    <header>Working with Remotes</header>
+    <article>
+      <p>
+        Remote repositories are versions of your hosted projects online on the internet or somewhere else. To add a new remote Git repository with a shortname that is easily referenced, use the command <code>git remote add &lt;shortname&gt; &lt;url&gt;</code>
+      </p>
+      <p>
+        Consequently, you can also get data from your remote projects by using the command:
+        <code>$ git fetch &lt;remote&gt;</code>
+        What this does is go to your remote project and pulls all the data from the remote project that you don’t have yet. Afterwards, all the references to all the branches from that remote project is available for you to merge or inspect at any time.
+      </p>
+      <p>
+        The command <code>git pull</code> is like "git fetch" but it also automatically merges that remote branch into your current branch that you are currently working on.
+      </p>
+      
+      <p>
+        To do the opposite and send the current branch to your remote branch you use the command <code>git push &lt;remote&gt; &lt;branch&gt;</code> Or if you want to push to the main branch on the origin server you use the command:
+        <code>git push &lt;origin &gt; &lt;master&gt;</code>
+      </p>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Branches">
+    <header>Branches</header>
+    <article>
+      <p>
+        How Git stores it data creates a series of snapshots that can be called a branch. Let say there are three commits done for a project, there will then be three successive commits in a line with the latest commit being marked as the third, while the first commit is called one and the second commit is two.
+      </p>
+      <p>
+      When a different branch is made, it creates a protruding commit that isn't in the main line branch but is still connected. That fourth commit will be called four, but you still aren't on that branch, it has only been created. The HEAD pointer specifies which branch you are in, which you can check with the command:
+        <code>$ git log --oneline --decorate</code>
+      </p>
+      
+      <p>
+        You can then switch to the different branch by using the command:
+        <code>git checkout &lt;branch name&gt;</code>
+      </p>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Branch_Merging">
+    <header>Branch Merging</header>
+    <article>
+      <p>
+      While working on a main project, there is an issue that needs to be fixed where you decided to create a branch just for that issue. To make a new branch and switch to it at the same time, use the command:
+        <code>
+          $ git checkout -b &lt;issue name&gt;
+          Switched to a new branch "issue name"
+        </code>
+      </p>
+      
+      <p>
+        After creating some commits for that issue branch and fixing whatever problems there are you want to have the fixes made in the the main branch as well. To merge both branches together, you have to <strong>checkout</strong> the branch you wish to merge both into and then run the <strong>git merge</strong> command:
+        <code>
+          $ git checkout main
+          Switched to branch 'main'
+          $ git merge &lt;issue name&gt;
+          Merge made by the 'recursive' strategy.
+          index.html |    1 +
+          1 file changed, 1 insertion(+)
+        </code>
+        This will create a new snapshot that in the main branch line with the "issue" branch also pointing to it as a parent. At this point, you can delete the "issue" branch with the command:
+      <code>
+      $ git branch -d &lt;issue name&gt;
+      </code>
+      </p>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Rebasing">
+    <header>Rebasing</header>
+    <article>
+      <p>
+        There is an alternative to "git merge" called rebasing. It differentiates from "git merge" in the sense it takes all the changes that were committed on one branch and replay them on a different branch. That means if you have two different branches and you use the "rebase" command, it takes the changes made to the first branch, applies it to the second branch, and makes it look like all the changes occurred in a single branch. This creates a cleaner and linear history for the project that makes it look like it all happened in a line of successive commits.  
+      </p>
+      
+       <p>
+        But there are risks to rebasing, as it is effectively erasing past commits from different branches, and creating new ones that are similar but not the same and making it look like the history is entirely linear. Thats why as a rule for using rebasing you have to make sure <strong> not to rebase commits that exist outside your repository and that people may have based work on.</strong> In a public repository that other members might need the past commits to work on, rebasing will interfere with merging or pulling/pushing commits.
+      </p>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Github">
+    <header>Github</header>
+    <article>
+      <p>
+        Github is largest host for Git repositories, with millions of developers and projects being collaborated on. One of the most common usage of Github is hosting open-source projects which can allow different users to send pull requests or suggestions to improve different projects. While projects uploaded on Github can also be private, that does not mean it is completely safe to upload private information onto your repositories. Due to the nature of how Git commits work, once it is committed that snapshot exists in the history forever, so it can't be removed.
+      </p>
+    </article>
+  </section>
+      
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a href="https://git-scm.com/book/en/v2" target="_blank">git-scm</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
