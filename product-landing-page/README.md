@@ -1,6 +1,6 @@
-# Survey Form Challenge
+# Product Landing Page Challenge
 
-This is a solution to the [Product Landing Page Project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
+This is a solution to the [Product Landing Page Project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page).
 
 ## Table of contents
 
