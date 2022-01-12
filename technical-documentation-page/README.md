@@ -36,16 +36,8 @@ Fullfill the below user stories:
 
 ### Screenshots
 
-![image](https://user-images.githubusercontent.com/79604811/148718634-faf64cfb-a6c6-4f73-a5f9-9e8907d0d07a.png)
-![image](https://user-images.githubusercontent.com/79604811/148718658-e3771bb8-9475-4c96-8eb7-87c4c1cc25ea.png)
-![image](https://user-images.githubusercontent.com/79604811/148718688-d3e6d0fe-689e-41e2-a5c4-9c0d9d18b67f.png)
-![image](https://user-images.githubusercontent.com/79604811/148718705-08afba2c-7be6-417d-a2ad-71a81cbde4ca.png)
-![image](https://user-images.githubusercontent.com/79604811/148718716-0745f677-44d2-4b30-b37d-dc8a5dedc61c.png)
-![image](https://user-images.githubusercontent.com/79604811/148718744-7f30778c-34b3-435b-90f7-ac5afd56e5a5.png)
-![image](https://user-images.githubusercontent.com/79604811/148718760-036c8422-64cc-4de9-9241-e74d737da03c.png)
-![image](https://user-images.githubusercontent.com/79604811/148718775-a5c53d9f-2039-4210-8ce8-55c07f69c301.png)
-
-
+![image](https://user-images.githubusercontent.com/79604811/149065762-a2e2a7ef-6432-4ec4-92a3-c5a5649593db.png)
+![image](https://user-images.githubusercontent.com/79604811/149065796-1c8002ed-2975-4f7c-b90e-830d6585ff9b.png)
 
 ### Links
 
