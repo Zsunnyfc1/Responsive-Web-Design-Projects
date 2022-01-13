@@ -187,6 +187,10 @@ img {
   border-radius: 2px;
 }
 
+.project:hover {
+    transform: scale(1.1);
+}
+
 .code {
   color: var(--main-gray);
   transition: color 0.3s ease-out;
