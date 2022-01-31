@@ -1,6 +1,6 @@
 ﻿# freeCodeCamp-Responsive-Web-Design-Projects 
  
- Here are my five projects completed that are required to receive a certification for freeCodeCamp's Responsive Web Design Course.
+ Here are my five completed projects that were required to receive a certification for freeCodeCamp's Responsive Web Design Course.
  
  - ### Project 1: [Tribute Page](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/tribute-page) 
 
