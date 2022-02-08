@@ -12,4 +12,4 @@
 
 - ### Project 5: [Personal Website](https://github.com/Zsunnyfc1/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/personal-portfolio-webpage)
 
-### [Certification](https://www.freecodecamp.org/certification/zsunnyfc1/responsive-web-design) issued on January 12, 2022.
+### [Certification issued on January 12, 2022.](https://www.freecodecamp.org/certification/zsunnyfc1/responsive-web-design) 
